@@ -30,9 +30,9 @@ Jetcap comes with a set of 4 common resources :
 All HTTP methods are supported. You can use http or https for your requests.
 
 ```bash
-GET    : /api/users
+GET    : /users
 
-GET    : /api/users/2
+GET    : /users/2
 
 GET    : /users/2/todos
 
@@ -41,4 +41,4 @@ GET    : /todos?userId=2
 
 ## Guides 📝
 
-For examples and more, you can visit https://jetcap.vercel.app
+For examples and more, you can visit https://jetcap.vercel.app/guide

@@ -1,7 +1,3 @@
----
-description: "Example"
----
-
 ## Getting Resource
 
 ```javascript

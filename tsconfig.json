@@ -7,7 +7,12 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@libs/*": ["src/libs/*"],
+      "@css/*": ["src/styles/*"],
+      "@types/*": ["src/types/*"],
+      "@layouts/*": ["src/layouts/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,

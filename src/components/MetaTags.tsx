@@ -9,7 +9,7 @@ interface MetaProps {
 }
 
 export const meta = {
-  title: "JetCap - Free Fake Rest Api",
+  title: "Jetcap - A hosted REST API ready to respond to your AJAX requests",
   description:
     "JetCap is a free online REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.",
   image: "/static/images/Banner.png",

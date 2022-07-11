@@ -4,7 +4,7 @@ import { A } from "./NavLink";
 export default function Footer() {
   return (
     <footer className="max-w-screen-xl mx-auto select-none text-white border-t border-gray-800">
-      <section className="flex justify-between items-center py-4 px-4">
+      <section className="hidden sm:flex justify-between items-center py-4 px-4">
         <p className="text-base">
           Built using{" "}
           <A href="https://www.nextjs.org/" target="_blank" className="links">

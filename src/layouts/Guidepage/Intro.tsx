@@ -3,7 +3,7 @@ import { A } from "@components/NavLink";
 export default function Intro() {
   return (
     <>
-      <h1 className="title-mark max-w-fit text-gray-100 text-5xl font-bold leading-tight">
+      <h1 className="title-mark max-w-fit select-none text-gray-100 text-5xl font-bold leading-tight">
         Basic guide.
       </h1>
       <section className="my-5 max-w-2xl">

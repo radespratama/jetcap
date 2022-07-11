@@ -11,9 +11,6 @@ export default function Header() {
           <ActiveLink href="/guide" className="links">
             Guide
           </ActiveLink>
-          <ActiveLink href="/sponsor" className="links">
-            Sponsor ?
-          </ActiveLink>
         </div>
       </nav>
     </header>

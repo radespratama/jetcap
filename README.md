@@ -36,7 +36,7 @@ GET    : /api/users/2
 
 GET    : /users/2/todos
 
-GET    : /todos?userId=1
+GET    : /todos?userId=2
 ```
 
 ## Guides 📝

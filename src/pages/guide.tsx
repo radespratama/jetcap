@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import type { NextPage, GetStaticProps } from "next";
 import matter from "gray-matter";
@@ -8,7 +9,9 @@ import Layout from "@components/Layout";
 import Loading from "@components/Loading";
 
 import Intro from "@layouts/Guidepage/Intro";
-import ContentDisplay from "@layouts/Guidepage/ContentDisplay";
+const ContentDisplay = dynamic(
+  () => import("@layouts/Guidepage/ContentDisplay")
+);
 
 interface Props {
   guide: string;
@@ -21,7 +24,7 @@ const Guide: NextPage<Props> = ({ guide }) => {
     if (guide) {
       setTimeout(() => {
         setLoading(false);
-      }, 4000);
+      }, 3000);
     }
     return () => clearTimeout();
   }, [guide]);

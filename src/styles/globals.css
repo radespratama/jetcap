@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("/fonts/CascadiaCode.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 @import url("./markdown.css");
 
 @layer components {

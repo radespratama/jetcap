@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -29,8 +30,8 @@ module.exports = {
         " 0px -0.333333em 0px 0px inset",
     }),
     fontFamily: {
-      sans: ["Outfit", "sans-serif"],
-      mono: ["Cascadia Code"],
+      sans: ["Outfit", ...defaultTheme.fontFamily.sans],
+      mono: ["Cascadia Code", ...defaultTheme.fontFamily.mono],
     },
   },
   plugins: [

@@ -20,6 +20,15 @@ export default function Intro() {
           with any other language. You can copy-paste the code into your browser
           console to test quickly.
         </p>
+        <div className="text-white text-lg mt-8">
+          Endpoint list :
+          <ul className="flex space-x-6 mt-2 cursor-pointer">
+            <li className="text-sky-500">/users</li>
+            <li className="text-sky-500">/todos</li>
+            <li className="text-sky-500">/songs</li>
+            <li className="text-sky-500">/images</li>
+          </ul>
+        </div>
       </section>
     </>
   );

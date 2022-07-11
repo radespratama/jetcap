@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <>
       <div className="flex items-center justify-center min-h-screen relative z-[60]">
-        <h3 className="text-white text-3xl lg:text-4xl select-none animate-pulse transform -rotate-6">
+        <h3 className="text-white text-3xl lg:text-4xl select-none animate-pulse transform">
           Zzz...
         </h3>
       </div>

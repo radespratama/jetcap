@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import NextNProgress from "nextjs-progressbar";
+import { Toaster } from "react-hot-toast";
 
 import "@css/globals.css";
 function MyApp({ Component, pageProps }: AppProps) {
@@ -13,6 +14,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         showOnShallow
       />
       <Component {...pageProps} />
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          duration: 2000,
+        }}
+      />
     </>
   );
 }

@@ -1,6 +1,9 @@
-import React from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import toast from "react-hot-toast";
 
 export default function Intro() {
+  const notify = () => toast.success("Copied to clipboard");
+
   return (
     <article className="max-w-screen-xl mx-auto">
       <section className="max-w-xl mx-auto flex flex-col items-center justify-center min-h-screen">
@@ -16,9 +19,11 @@ export default function Intro() {
           </span>
           , … across the globe 🌏
         </p>
-        <button className="px-8 py-3 bg-sky-500 hover:bg-sky-700 transition-all duration-200 rounded-md text-gray-100 my-5">
-          Get started
-        </button>
+        <CopyToClipboard text={`${process.env.PUBLIC_API}`} onCopy={notify}>
+          <div className="my-8 prose w-full max-w-sm rounded-md text-center font-mono text-white">
+            <pre className="bg-gray-900">{process.env.PUBLIC_API}</pre>
+          </div>
+        </CopyToClipboard>
         <p className="text-gray-400 text-lg font-medium">
           Free for use &bull; No card required &bull; Secure
         </p>

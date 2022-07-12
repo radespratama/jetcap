@@ -7,7 +7,7 @@ export default function Intro() {
   return (
     <article className="max-w-screen-xl mx-auto">
       <section className="max-w-xl mx-auto flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-5xl sm:text-6xl mb-6 leading-tight text-white font-bold text-center">
+        <h1 className="text-5xl lg:text-6xl mb-6 leading-tight text-white font-bold text-center">
           Develop your UI before your{" "}
           <span className="gradient-tx">backend</span>
         </h1>
@@ -24,8 +24,8 @@ export default function Intro() {
             <pre className="bg-gray-900">{process.env.PUBLIC_API}</pre>
           </div>
         </CopyToClipboard>
-        <p className="text-gray-400 text-lg font-medium">
-          Free for use &bull; No card required &bull; Secure
+        <p className="text-gray-400 text-base md:text-lg text-center font-medium">
+          Free for use &bull; No credit card &bull; Secure
         </p>
       </section>
     </article>

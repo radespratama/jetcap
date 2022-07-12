@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
 
 import Layout from "@components/Layout";
-import Intro from "@layouts/Homepage/Intro";
+const Intro = dynamic(() => import("@layouts/Homepage/Intro"));
 
 const Home: NextPage = () => {
   return (

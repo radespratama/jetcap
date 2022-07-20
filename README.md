@@ -1,5 +1,5 @@
 # Jetcap
-[Jetcap](https://jetcap.vercel.app) is a simple fake REST API for testing and prototyping.
+[Jetcap](https://jetcap.tech) is a simple fake REST API for testing and prototyping.
 
 ## When to use ✨
 Jetcap is a free online REST API that you can use `whenever you need some fake data`. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.
@@ -25,6 +25,10 @@ Jetcap comes with a set of 4 common resources :
 /images : 100 images
 ```
 
+```
+/colors : 28 colors
+```
+
 ## Routes 📍
 
 All HTTP methods are supported. You can use http or https for your requests.
@@ -41,4 +45,4 @@ GET    : /todos?userId=2
 
 ## Guides 📝
 
-For examples and more, you can visit https://jetcap.vercel.app/guide
+For examples and more, you can visit https://jetcap.tech/guide

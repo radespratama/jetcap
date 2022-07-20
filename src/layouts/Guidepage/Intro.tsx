@@ -1,4 +1,5 @@
 import { A } from "@components/NavLink";
+import { EndpointList } from "@libs/utils/Endpoint";
 
 export default function Intro() {
   return (
@@ -23,10 +24,13 @@ export default function Intro() {
         <div className="text-white text-lg mt-8">
           Endpoint list :
           <ul className="flex space-x-6 mt-2 cursor-pointer">
-            <li className="text-sky-500">/users</li>
-            <li className="text-sky-500">/todos</li>
-            <li className="text-sky-500">/songs</li>
-            <li className="text-sky-500">/images</li>
+            {EndpointList.map((endpoint) => (
+              <li className="text-sky-500" key={endpoint.id}>
+                <A href={`${process.env.PUBLIC_API}/${endpoint.path}`} target="_blank">
+                  {endpoint.path}
+                </A>
+              </li>
+            ))}
           </ul>
         </div>
       </section>

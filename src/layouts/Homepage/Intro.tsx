@@ -7,15 +7,15 @@ function ClipBoard() {
 
   return (
     <div className="max-w-[350px] w-full flex items-center space-x-3 rounded-lg bg-gray-900 overflow-hidden px-2">
+      <div className="w-10/12 prose text-center">
+        <pre className="bg-gray-900">http://jetcap.herokuapp.com</pre>
+      </div>
       <div className="w-2/12 flex justify-center">
         <CopyToClipboard text={`${process.env.PUBLIC_API}`} onCopy={notify}>
           <button className="p-2 rounded-lg">
             <Copy className="w-5 h-5 text-gray-700 hover:text-gray-600" />
           </button>
         </CopyToClipboard>
-      </div>
-      <div className="w-10/12 prose text-center">
-        <pre className="bg-gray-900">http://jetcap.herokuapp.com</pre>
       </div>
     </div>
   );

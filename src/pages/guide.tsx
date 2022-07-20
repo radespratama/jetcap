@@ -24,7 +24,7 @@ const Guide: NextPage<Props> = ({ guide }) => {
     if (guide) {
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 1500);
     }
     return () => clearTimeout();
   }, [guide]);

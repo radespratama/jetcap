@@ -8,7 +8,7 @@ function ClipBoard() {
   return (
     <div className="max-w-[350px] w-full flex items-center space-x-3 rounded-lg bg-gray-900 overflow-hidden px-2">
       <div className="w-10/12 prose text-center">
-        <pre className="bg-gray-900">http://jetcap.herokuapp.com</pre>
+        <pre className="bg-gray-900">{`${process.env.PUBLIC_API}`}</pre>
       </div>
       <div className="w-2/12 flex justify-center">
         <CopyToClipboard text={`${process.env.PUBLIC_API}`} onCopy={notify}>

@@ -10,14 +10,12 @@ interface LayoutProps {
   title: string;
   description?: string;
   image?: string;
-  url?: string;
 }
 
 export default function Layout({
   children,
   title,
   description,
-  url,
   image,
 }: LayoutProps) {
   return (
@@ -25,7 +23,6 @@ export default function Layout({
       <MetaTags
         title={title}
         description={description}
-        url={url}
         image={image}
       />
       <Header />

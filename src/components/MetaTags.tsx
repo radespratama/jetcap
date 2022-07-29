@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 interface MetaProps {
   title: string;
   description?: string;
-  url?: string;
   image?: string;
 }
 
@@ -15,12 +15,8 @@ export const meta = {
   image: "/static/images/Banner.png",
   type: "website",
 };
-export default function MetaTags({
-  title,
-  description,
-  url,
-  image,
-}: MetaProps) {
+export default function MetaTags({ title, description, image }: MetaProps) {
+  const { asPath } = useRouter();
   return (
     <Head>
       <meta
@@ -33,11 +29,14 @@ export default function MetaTags({
       <meta name="description" content={description || meta.description} />
 
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="canonical" href={`${process.env.NEXT_APP_BASE_URL}/${url}`} />
+      <link
+        rel="canonical"
+        href={`${process.env.NEXT_PUBLIC_BASE_URL}${asPath}`}
+      />
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
-        content={`${process.env.NEXT_APP_BASE_URL}/${url}`}
+        content={`${process.env.NEXT_PUBLIC_BASE_URL}${asPath}`}
       />
       <meta property="og:title" content={title || meta.title} />
       <meta property="og:description" content={description || meta.title} />

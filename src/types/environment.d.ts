@@ -7,4 +7,7 @@ declare global {
       ENV: "test" | "dev" | "prod" | "local";
     }
   }
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
 }

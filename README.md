@@ -7,7 +7,7 @@ Jetcap is a free online REST API that you can use `whenever you need some fake d
 
 ## Resource 📦
 
-Jetcap comes with a set of 4 common resources :
+Jetcap comes with a set of 5 common resources :
 
 ```
 /todos : 100 todos
@@ -26,7 +26,7 @@ Jetcap comes with a set of 4 common resources :
 ```
 
 ```
-/colors : 28 colors
+/colors : 33 colors
 ```
 
 ## Routes 📍

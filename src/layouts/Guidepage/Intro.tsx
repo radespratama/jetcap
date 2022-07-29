@@ -26,7 +26,7 @@ export default function Intro() {
           <ul className="flex space-x-6 mt-2 cursor-pointer">
             {EndpointList.map((endpoint) => (
               <li className="text-sky-500" key={endpoint.id}>
-                <A href={`${process.env.PUBLIC_API}/${endpoint.path}`} target="_blank">
+                <A href={`${process.env.PUBLIC_API}${endpoint.path}`} target="_blank">
                   {endpoint.path}
                 </A>
               </li>

@@ -8,7 +8,7 @@ import matter from "gray-matter";
 import Layout from "@components/Layout";
 import Loading from "@components/Loading";
 
-import Intro from "@layouts/Guidepage/Intro";
+const Intro = dynamic(() => import("@layouts/Guidepage/Intro"));
 const ContentDisplay = dynamic(
   () => import("@layouts/Guidepage/ContentDisplay")
 );

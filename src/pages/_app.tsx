@@ -1,10 +1,10 @@
-import xss from "xss";
 import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { Toaster } from "react-hot-toast";
 import NextNProgress from "nextjs-progressbar";
 import type { AppProps } from "next/app";
+import DOMPurify from "isomorphic-dompurify";
 
 import * as gtag from "@libs/utils/GTag";
 
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
-          __html: xss(`
+          __html: DOMPurify.sanitize(`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

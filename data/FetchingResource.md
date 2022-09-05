@@ -3,7 +3,7 @@
 ```javascript
 /** Javascript Fetch */
 
-fetch("https://jetcap.herokuapp.com/users/1")
+fetch("https://jetcap-api.cyclic.app/users/1")
   .then((response) => response.json())
   .then((json) => console.log(json))
   .catch((err) => console.error(err.message));
@@ -14,7 +14,7 @@ fetch("https://jetcap.herokuapp.com/users/1")
 
 $.ajax({
   type: "GET",
-  url: "https://jetcap.herokuapp.com/users/1",
+  url: "https://jetcap-api.cyclic.app/users/1",
   success: function (data) {
     console.log("Result : ", data);
   },
@@ -29,7 +29,7 @@ $.ajax({
 
 const HTTP = new XMLHttpRequest();
 
-HTTP.open("GET", "https://jetcap.herokuapp.com/users/1");
+HTTP.open("GET", "https://jetcap-api.cyclic.app/users/1");
 HTTP.send();
 HTTP.onreadystatechange = function (e) {
   if (this.readyState == 4 && this.status == 200) {
@@ -42,7 +42,7 @@ HTTP.onreadystatechange = function (e) {
 /** Axios */
 
 axios
-  .get("https://jetcap.herokuapp.com/users/1")
+  .get("https://jetcap-api.cyclic.app/users/1")
   .then((res) => console.log(res.data))
   .catch((err) => console.error(err.message));
 ```
@@ -67,7 +67,7 @@ axios
 ```javascript
 /** Javascript Fetch */
 
-fetch("https://jetcap.herokuapp.com/users")
+fetch("https://jetcap-api.cyclic.app/users")
   .then((response) => response.json())
   .then((json) => console.log(json))
   .catch((err) => console.error(err.message));
@@ -95,7 +95,7 @@ Basic filtering is supported through query parameters. ✨
 ```javascript
 /** This will return all the posts that belong to the first user */
 
-fetch("https://jetcap.herokuapp.com/todos?userId=1")
+fetch("https://jetcap-api.cyclic.app/todos?userId=1")
   .then((response) => response.json())
   .then((json) => console.log(json))
   .catch((err) => console.error(err.message));
@@ -110,7 +110,7 @@ One level of nested route is available. ✨
 ```javascript
 /** This will return all the posts that belong to the first user */
 
-fetch("https://jetcap.herokuapp.com/users/1/images")
+fetch("https://jetcap-api.cyclic.app/users/1/images")
   .then((response) => response.json())
   .then((json) => console.log(json))
   .catch((err) => console.error(err.message));
@@ -118,8 +118,8 @@ fetch("https://jetcap.herokuapp.com/users/1/images")
 
 The available nested routes are:
 
-- <a href="https://jetcap.herokuapp.com/users/1/images">/users/1/images</a>
+- <a href="https://jetcap-api.cyclic.app/users/1/images">/users/1/images</a>
 
-- <a href="https://jetcap.herokuapp.com/users/1/todos">/users/1/todos</a>
+- <a href="https://jetcap-api.cyclic.app/users/1/todos">/users/1/todos</a>
 
-- <a href="https://jetcap.herokuapp.com/users/1/songs">/users/1/songs</a>
+- <a href="https://jetcap-api.cyclic.app/users/1/songs">/users/1/songs</a>
